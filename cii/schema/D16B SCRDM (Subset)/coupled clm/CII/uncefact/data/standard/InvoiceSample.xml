@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?><rsm:CrossIndustryInvoice xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100">
+                <rsm:ExchangedDocumentContext>
+                    <ram:GuidelineSpecifiedDocumentContextParameter>
+                        <ram:ID>urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</ram:ID>
+                    </ram:GuidelineSpecifiedDocumentContextParameter>
+                </rsm:ExchangedDocumentContext>
+                <rsm:ExchangedDocument>
+                    <ram:ID>FAC/2023/05534</ram:ID>
+                    <ram:TypeCode>380</ram:TypeCode>
+                    <ram:IssueDateTime>
+                        <udt:DateTimeString format="102">20231208</udt:DateTimeString>
+                    </ram:IssueDateTime>
+                </rsm:ExchangedDocument>
+                <rsm:SupplyChainTradeTransaction>
+                <ram:IncludedSupplyChainTradeLineItem>
+                    <ram:AssociatedDocumentLineDocument>
+                        <ram:LineID>1</ram:LineID>
+                    </ram:AssociatedDocumentLineDocument>
+                    <ram:SpecifiedTradeProduct>
+                        <ram:Name>Test</ram:Name>
+                    </ram:SpecifiedTradeProduct>
+                    <ram:SpecifiedLineTradeAgreement>
+                        <ram:GrossPriceProductTradePrice>
+                            <ram:ChargeAmount>8000.00</ram:ChargeAmount>
+                        </ram:GrossPriceProductTradePrice>
+                        <ram:NetPriceProductTradePrice>
+                            <ram:ChargeAmount>8000.00</ram:ChargeAmount>
+                        </ram:NetPriceProductTradePrice>
+                    </ram:SpecifiedLineTradeAgreement>
+                    <ram:SpecifiedLineTradeDelivery>
+                        <ram:BilledQuantity unitCode="C62">1.0</ram:BilledQuantity>
+                    </ram:SpecifiedLineTradeDelivery>
+                    <ram:SpecifiedLineTradeSettlement>
+                        <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                            <ram:LineTotalAmount>8000.00</ram:LineTotalAmount>
+                        </ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    </ram:SpecifiedLineTradeSettlement>
+                </ram:IncludedSupplyChainTradeLineItem>
+                    <ram:ApplicableHeaderTradeAgreement>
+                        <ram:SellerTradeParty>
+                <ram:Name>OCMS - KLVG</ram:Name>
+                <ram:DefinedTradeContact>
+                    <ram:PersonName>OCMS - KLVG</ram:PersonName>
+                    <ram:TelephoneUniversalCommunication>
+                        <ram:CompleteNumber>026 552 22 22</ram:CompleteNumber>
+                    </ram:TelephoneUniversalCommunication>
+                    <ram:EmailURIUniversalCommunication>
+                        <ram:URIID schemeID="SMTP">info@didactis.ch</ram:URIID>
+                    </ram:EmailURIUniversalCommunication>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>1763</ram:PostcodeCode>
+                    <ram:LineOne>Chemin de la Madeleine 1</ram:LineOne>
+                    <ram:CityName>Granges-Paccot</ram:CityName>
+                    <ram:CountryID>CH</ram:CountryID>
+                </ram:PostalTradeAddress>
+                            <ram:SpecifiedTaxRegistration>
+                                <ram:ID schemeID="VA">CHE-115.250.173</ram:ID>
+                            </ram:SpecifiedTaxRegistration>
+                        </ram:SellerTradeParty>
+                        <ram:BuyerTradeParty>
+                <ram:Name>EPS Avenches et environs</ram:Name>
+                <ram:DefinedTradeContact>
+                    <ram:PersonName>EPS Avenches et environs</ram:PersonName>
+                    <ram:TelephoneUniversalCommunication>
+                        <ram:CompleteNumber>+41 26 557 30 80</ram:CompleteNumber>
+                    </ram:TelephoneUniversalCommunication>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>1580</ram:PostcodeCode>
+                    <ram:LineOne>Route Sous-Ville 6A</ram:LineOne>
+                    <ram:CityName>Avenches</ram:CityName>
+                    <ram:CountryID>CH</ram:CountryID>
+                </ram:PostalTradeAddress>
+                        </ram:BuyerTradeParty>
+                        <ram:BuyerOrderReferencedDocument>
+                            <ram:IssuerAssignedID>FAC/2023/05534</ram:IssuerAssignedID>
+                        </ram:BuyerOrderReferencedDocument>
+                    </ram:ApplicableHeaderTradeAgreement>
+                    <ram:ApplicableHeaderTradeDelivery>
+                        <ram:ShipToTradeParty>
+                <ram:Name>Collège de Sous-Ville - Bâtiment A</ram:Name>
+                <ram:DefinedTradeContact>
+                    <ram:PersonName>Collège de Sous-Ville - Bâtiment A</ram:PersonName>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>1580</ram:PostcodeCode>
+                    <ram:LineOne>Route Sous-Ville 6A</ram:LineOne>
+                    <ram:CityName>Avenches</ram:CityName>
+                    <ram:CountryID>CH</ram:CountryID>
+                </ram:PostalTradeAddress>
+                        </ram:ShipToTradeParty>
+                    </ram:ApplicableHeaderTradeDelivery>
+                    <ram:ApplicableHeaderTradeSettlement>
+                        <ram:InvoiceCurrencyCode>CHF</ram:InvoiceCurrencyCode>
+                        <ram:BillingSpecifiedPeriod>
+                            <ram:StartDateTime>
+                                <udt:DateTimeString format="102">20231208</udt:DateTimeString>
+                            </ram:StartDateTime>
+                        </ram:BillingSpecifiedPeriod>
+                        <ram:SpecifiedTradePaymentTerms>
+                            <ram:Description>30 Days</ram:Description>
+                            <ram:DueDateDateTime>
+                                <udt:DateTimeString format="102">20240107</udt:DateTimeString>
+                            </ram:DueDateDateTime>
+                        </ram:SpecifiedTradePaymentTerms>
+                        <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                            <ram:LineTotalAmount>8000.00</ram:LineTotalAmount>
+                            <ram:TaxBasisTotalAmount>8000.00</ram:TaxBasisTotalAmount>
+                            <ram:TaxTotalAmount currencyID="CHF">0.00</ram:TaxTotalAmount>
+                            <ram:GrandTotalAmount>8000.00</ram:GrandTotalAmount>
+                            <ram:TotalPrepaidAmount>0.00</ram:TotalPrepaidAmount>
+                            <ram:DuePayableAmount>8000.00</ram:DuePayableAmount>
+                        </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                    </ram:ApplicableHeaderTradeSettlement>
+                </rsm:SupplyChainTradeTransaction>
+                <rsm:CostCenter>TestCostCenter</rsm:CostCenter>
+                <rsm:AdminAccount>TestAdminAccount</rsm:AdminAccount>
+            </rsm:CrossIndustryInvoice>

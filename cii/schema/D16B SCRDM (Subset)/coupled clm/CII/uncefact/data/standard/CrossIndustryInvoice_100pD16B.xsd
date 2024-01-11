@@ -23,8 +23,8 @@ This document and the information contained herein is provided on an "AS IS" bas
 			<xsd:element name="ExchangedDocument" type="ram:ExchangedDocumentType"/>
 			<xsd:element name="SupplyChainTradeTransaction" type="ram:SupplyChainTradeTransactionType"/>
 			<xsd:element name="ValuationBreakdownStatement" type="ram:ValuationBreakdownStatementType" minOccurs="0"/>
-			<xsd:element name="CostCenter" type="udt:TextType"/>
-			<xsd:element name="AdminAccount" type="udt:TextType"/>
+			<xsd:element name="CostCenter" type="udt:TextType" minOccurs="0" maxOccurs="1"/>
+			<xsd:element name="AdminAccount" type="udt:TextType" minOccurs="0" maxOccurs="1"/>
 		</xsd:sequence>
 	</xsd:complexType>
 </xsd:schema>

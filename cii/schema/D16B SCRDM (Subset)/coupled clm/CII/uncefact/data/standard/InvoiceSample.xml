@@ -114,6 +114,5 @@
                         </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                     </ram:ApplicableHeaderTradeSettlement>
                 </rsm:SupplyChainTradeTransaction>
-                <rsm:CostCenter>TestCostCenter</rsm:CostCenter>
-                <rsm:AdminAccount>TestAdminAccount</rsm:AdminAccount>
+                <CostCenter>PIFPAF</CostCenter>
             </rsm:CrossIndustryInvoice>

@@ -1,15 +1,17 @@
 <?xml version="1.0"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-        xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
+        xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
         xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100"
-        targetNamespace="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100"
-        >
+        targetNamespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100"
+    >
     <xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" schemaLocation="CrossIndustryInvoice_UnqualifiedDataType_100pD16B.xsd"/>
+    <xsd:import namespace="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" schemaLocation="CrossIndustryInvoice_100pD16B.xsd"/>
+
     <xsd:redefine xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-        schemaLocation="CrossIndustryInvoice_100pD16B.xsd" >
-        <xsd:complexType name="CrossIndustryInvoiceType">
+        schemaLocation="CrossIndustryInvoice_ReusableAggregateBusinessInformationEntity_100pD16B.xsd" >
+        <xsd:complexType name="ExchangedDocumentContextType">
             <xsd:complexContent>
-                <xsd:extension base="rsm:CrossIndustryInvoiceType">
+                <xsd:extension base="ram:ExchangedDocumentContextType">
                     <xsd:sequence>
                         <xsd:element name="CostCenter" type="udt:TextType" minOccurs="1" maxOccurs="1"
                             nillable="false">
@@ -22,4 +24,21 @@
             </xsd:complexContent>
         </xsd:complexType>
     </xsd:redefine>
+    <xsd:redefine xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+        schemaLocation="CrossIndustryInvoice_ReusableAggregateBusinessInformationEntity_100pD16B.xsd" >
+        <xsd:complexType name="SupplyChainTradeLineItemType">
+            <xsd:complexContent>
+                <xsd:extension base="ram:SupplyChainTradeLineItemType">
+                    <xsd:sequence>
+                        <xsd:element name="AdminAccount" type="udt:TextType" minOccurs="1" maxOccurs="1"
+                            nillable="false">
+                            <xsd:annotation>
+                                <xsd:documentation>#TODO write doc</xsd:documentation>
+                            </xsd:annotation>
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:redefine>    
 </xsd:schema>

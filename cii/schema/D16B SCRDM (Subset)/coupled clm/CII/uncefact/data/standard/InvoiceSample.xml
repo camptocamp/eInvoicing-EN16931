@@ -3,6 +3,7 @@
                     <ram:GuidelineSpecifiedDocumentContextParameter>
                         <ram:ID>urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</ram:ID>
                     </ram:GuidelineSpecifiedDocumentContextParameter>
+                    <CostCenter>CSUD</CostCenter>
                 </rsm:ExchangedDocumentContext>
                 <rsm:ExchangedDocument>
                     <ram:ID>FAC/2023/05534</ram:ID>
@@ -35,6 +36,7 @@
                             <ram:LineTotalAmount>8000.00</ram:LineTotalAmount>
                         </ram:SpecifiedTradeSettlementLineMonetarySummation>
                     </ram:SpecifiedLineTradeSettlement>
+                    <AdminAccount>3100.100</AdminAccount>
                 </ram:IncludedSupplyChainTradeLineItem>
                     <ram:ApplicableHeaderTradeAgreement>
                         <ram:SellerTradeParty>
@@ -114,5 +116,4 @@
                         </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
                     </ram:ApplicableHeaderTradeSettlement>
                 </rsm:SupplyChainTradeTransaction>
-                <CostCenter>PIFPAF</CostCenter>
             </rsm:CrossIndustryInvoice>
